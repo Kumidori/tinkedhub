@@ -1,0 +1,41 @@
+extends layout
+
+block content
+    include navigation
+    #main
+        #upload-overlay
+            form(method="post", enctype="multipart/form-data")
+                .row
+                    .col-sm-6.upload-element
+
+                        .preview-container
+                            img(id="preview-image", src='#', alt="dein Bild")
+                        input(id="upload-input",  type="file", name="fileUploaded")
+                        button.btn.btn-lg.upload-btn(type="button") Upload File
+                    .col-sm-6.upload-element
+                        p Kategorie
+                            select(multiple, id="selectcategories", name="category")
+                                option(value="Tier") Tier
+                                option(value="Portrait") Portrait
+                                option(value="Schrift") Schrift
+                                option(value="Tiny") Tiny
+                                option(value="Sleeve") Sleeve
+                                option(value="Bunt") Bunt
+                                option(value="3D") 3D
+                                option(value="Tribal") Tribal
+
+                        p Studio<br>
+                            input(type="text", name="studio")
+                        p Artist<br>
+                            input(type="text", name="artist")
+                        p Tags<br>
+                            input(type="text", name="tags")
+                        p
+                        input(type="submit", value="Hochladen", style="margin:10px")
+                        br
+                        a(href="#", onClick="Overlay()") Close
+
+        .grid
+            each tattoo in tattoos
+                img.grid-item(src=tattoo.url, class=tattoo.category)
+

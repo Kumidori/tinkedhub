@@ -1,0 +1,44 @@
+//
+   Created by Nico on 22.04.2017.
+nav.navbar.navbar-inverse.navbar-fixed-top
+    .container-fluid
+        .navbar-header
+            button.navbar-toggle(type="button",data-toggle="collapse",data-target="#myNavbar")
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+            a.navbar-brand(href="#") tinked
+        .collapse.navbar-collapse.navbar-right#myNavbar
+            ul.nav.navbar-nav
+                li
+                    a(href="#",onclick="Overlay()")
+                        img(src="/images/add-button.png", height="20px")
+                li
+                    a#studios(href="#") Studios
+
+                li
+                    a#profil(href="#") Profil
+                li
+                    a#kontakt(href="#") Kontakt
+                li
+                    a#impressum(href="#") Impressum
+                li
+                    a#kategorien(onclick="openNav()") Filter
+                li
+                    .navbar-form
+                        input.form-control(placeholder="Search")
+
+        #mySidenav.sidenav
+            //a(href="javascript:void(0)" class="closebtn" onclick="closeNav()") &times
+            a(data-filter=".Tier") Tiere
+            a(data-filter=".Portrait") Portraits
+            a(data-filter=".Schrift") Schrift
+            a(data-filter=".Tiny") Tiny
+            a(data-filter=".Sleeve") Sleeves
+            a(data-filter=".Bunt") Bunt
+            a(data-filter=".3D") 3D
+            a(data-filter=".Tribal") Tribal
+            img.puppe(src="/images/Gliederskelett Kopie.png")
+
+
+

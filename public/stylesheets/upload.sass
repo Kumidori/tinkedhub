@@ -1,0 +1,68 @@
+#upload-overlay:after
+  position: fixed
+  content: ""
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  background: rgba(0,0,0,0.5)
+  z-index: -2
+
+
+#upload-overlay:before
+  position: absolute
+  content: ""
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  background: #FFF
+  z-index: -1
+
+#upload-overlay
+  display: none
+  position: fixed
+  padding: 10px
+  width: 50%
+  left: 25%
+  height: 370px
+  top: 50%
+  margin-top: -185px
+  background: #FFF
+  z-index: 20
+
+
+.upload-element
+  text-align: center
+  padding: 20px
+
+.btn:focus, .upload-btn:focus
+  outline: 0 !important
+
+.upload-btn
+  color: #ffffff
+  background-color: #F89406
+  border: none
+  margin-top: 10px;
+#upload-input
+  display: none
+
+
+.upload-btn:hover,
+.upload-btn:focus,
+.upload-btn:active,
+.upload-btn.active
+  color: #ffffff
+  background-color: #FA8900
+  border: none
+
+select#selectcategories
+  width: 100%
+#preview-image
+  display: none
+  max-width: 100%
+  max-height: 100%
+.preview-container
+  height: 250px
+  border: 2px dotted black
+  overflow: hidden
