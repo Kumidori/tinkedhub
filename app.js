@@ -8,6 +8,7 @@ var sassMiddleware = require('node-sass-middleware');
 var index = require('./routes/index');
 var users = require('./routes/users');
 var mongodb = require('mongodb');
+var cloudinary = require('cloudinary');
 
 
 var fs = require('fs');
@@ -16,6 +17,13 @@ var app = express();
 
 var server = app.listen(3030, function() {
     console.log('Listening on port %d', server.address().port);
+});
+
+// cloudinary config for image upload
+cloudinary.config({
+    cloud_name: 'hqbi89ehw',
+    api_key: '128684765954778',
+    api_secret: 'odfQUvIks86RFdrtIDkR6ywkwww'
 });
 
 // view engine setup

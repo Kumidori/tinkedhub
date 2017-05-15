@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="tinked.de">
+  <component name="PublishConfigData" autoUpload="Always" serverName="tinked.de" persistUploadOnCheckin="false">
     <serverData>
       <paths name="tinked.de">
         <serverdata>
